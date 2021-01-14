@@ -1,0 +1,84 @@
+body {
+  background-color: burlywood;
+  color: aliceblue;
+}
+
+.nav {
+  background-color: cadetblue;
+  margin-top: -8.5vh;
+  height: 25vh;
+  
+}
+
+.links {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 30px;
+  position: relative;
+  top: -35%;
+}
+
+a {
+  color: aliceblue;
+  text-decoration: none;
+  font-size: larger;
+  padding: 3%;
+
+}
+
+.Cbar {
+  background-color: rgba(0, 255, 255, 0.171);
+  width: 24%;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.pair {
+  background-color: black;
+  height: 120vh;
+  display: flex;
+}
+
+.symbol {
+  font-size: medium;
+  position: relative;
+  left: 10%;
+}
+
+.Info-card {
+  background-color: blueviolet;
+  width: 60%;
+  height: 75%;
+  border-radius: 6%;
+  text-align: center;
+  max-height: 65vh;
+}
+
+.currency-info {
+  background-position: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-header {
+  background-color: cadetblue;
+  height: 30%;
+}
+
+.card-main {
+  background-color: chocolate;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-footer {
+  background-color: brown;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 20%;
+}

@@ -1,0 +1,230 @@
+[
+        {
+            "id": "1",
+            "name": "Euro US Dollar",
+            "decimal": "4",
+            "symbol": "EUR/USD"
+        },
+        {
+            "id": "2",
+            "name": "Euro Swiss Franc",
+            "decimal": "4",
+            "symbol": "EUR/CHF"
+        },
+        {
+            "id": "3",
+            "name": "Euro Japanese Yen",
+            "decimal": "2",
+            "symbol": "EUR/JPY"
+        },
+        {
+            "id": "4",
+            "name": "Euro British Pound",
+            "decimal": "4",
+            "symbol": "EUR/GBP"
+        },
+        {
+            "id": "5",
+            "name": "Euro New Zealand Dollar",
+            "decimal": "4",
+            "symbol": "EUR/NZD"
+        },
+        {
+            "id": "6",
+            "name": "Euro Canadian Dollar",
+            "decimal": "4",
+            "symbol": "EUR/CAD"
+        },
+        {
+            "id": "7",
+            "name": "Euro Russian Ruble",
+            "decimal": "4",
+            "symbol": "EUR/RUB"
+        },
+        {
+            "id": "8",
+            "name": "Euro Singapore Dollar",
+            "decimal": "4",
+            "symbol": "EUR/SGD"
+        },
+        {
+            "id": "9",
+            "name": "Euro Danish Krone",
+            "decimal": "4",
+            "symbol": "EUR/DKK"
+        },
+        {
+            "id": "10",
+            "name": "Euro Turkish Lira",
+            "decimal": "4",
+            "symbol": "EUR/TRY"
+        },
+        {
+            "id": "11",
+            "name": "Euro South African Rand",
+            "decimal": "4",
+            "symbol": "EUR/ZAR"
+        },
+        {
+            "id": "12",
+            "name": "Euro Australian Dollar",
+            "decimal": "4",
+            "symbol": "EUR/AUD"
+        },
+        {
+            "id": "13",
+            "name": "Australian Dollar US Dollar",
+            "decimal": "4",
+            "symbol": "AUD/USD"
+        },
+        {
+            "id": "14",
+            "name": "Australian Dollar Japanese Yen",
+            "decimal": "2",
+            "symbol": "AUD/JPY"
+        },
+        {
+            "id": "15",
+            "name": "Australian Dollar Swiss Franc",
+            "decimal": "4",
+            "symbol": "AUD/CHF"
+        },
+        {
+            "id": "16",
+            "name": "Australian Dollar Canadian Dollar",
+            "decimal": "4",
+            "symbol": "AUD/CAD"
+        },
+        {
+            "id": "17",
+            "name": "Australian Dollar Singapore Dollar",
+            "decimal": "4",
+            "symbol": "AUD/SGD"
+        },
+        {
+            "id": "18",
+            "name": "US Dollar Canadian Dollar",
+            "decimal": "4",
+            "symbol": "USD/CAD"
+        },
+        {
+            "id": "19",
+            "name": "US Dollar Swiss Franc",
+            "decimal": "4",
+            "symbol": "USD/CHF"
+        },
+        {
+            "id": "20",
+            "name": "US Dollar Japanese Yen",
+            "decimal": "2",
+            "symbol": "USD/JPY"
+        },
+        {
+            "id": "21",
+            "name": "US Dollar New Zealand Dollar",
+            "decimal": "4",
+            "symbol": "USD/NZD"
+        },
+        {
+            "id": "22",
+            "name": "US Dollar Russian Ruble",
+            "decimal": "4",
+            "symbol": "USD/RUB"
+        },
+        {
+            "id": "23",
+            "name": "US Dollar Hong Kong Dollar",
+            "decimal": "4",
+            "symbol": "USD/HKD"
+        },
+        {
+            "id": "24",
+            "name": "US Dollar UAE Dirham",
+            "decimal": "4",
+            "symbol": "USD/AED"
+        },
+        {
+            "id": "25",
+            "name": "US Dollar Indian Rupee",
+            "decimal": "3",
+            "symbol": "USD/INR"
+        },
+        {
+            "id": "26",
+            "name": "US Dollar Chinese Yuan Offshore",
+            "decimal": "4",
+            "symbol": "USD/CNH"
+        },
+        {
+            "id": "27",
+            "name": "US Dollar Czech Koruna",
+            "decimal": "4",
+            "symbol": "USD/CZK"
+        },
+        {
+            "id": "28",
+            "name": "US Dollar Danish Krone",
+            "decimal": "4",
+            "symbol": "USD/DKK"
+        },
+        {
+            "id": "29",
+            "name": "US Dollar Norwegian Krone",
+            "decimal": "4",
+            "symbol": "USD/NOK"
+        },
+        {
+            "id": "30",
+            "name": "US Dollar Polish Zloty",
+            "decimal": "4",
+            "symbol": "USD/PLN"
+        },
+        {
+            "id": "31",
+            "name": "US Dollar Singapore Dollar",
+            "decimal": "4",
+            "symbol": "USD/SGD"
+        },
+        {
+            "id": "32",
+            "name": "US Dollar South African Rand",
+            "decimal": "4",
+            "symbol": "USD/ZAR"
+        },
+        {
+            "id": "33",
+            "name": "US Dollar Turkish Lira",
+            "decimal": "4",
+            "symbol": "USD/TRY"
+        },
+        {
+            "id": "34",
+            "name": "Japanese Yen British Pound",
+            "decimal": "5",
+            "symbol": "JPY/GBP"
+        },
+        {
+            "id": "35",
+            "name": "Canadian Dollar Japanese Yen",
+            "decimal": "2",
+            "symbol": "CAD/JPY"
+        },
+        {
+            "id": "36",
+            "name": "Japanese Yen Turkish Lira",
+            "decimal": "5",
+            "symbol": "JPY/TRY"
+        },
+        {
+            "id": "37",
+            "name": "Polish Zloty Japanese Yen",
+            "decimal": "4",
+            "symbol": "PLN/JPY"
+        },
+        {
+            "id": "38",
+            "name": "Singapore Dollar Japanese Yen",
+            "decimal": "2",
+            "symbol": "SGD/JPY"
+        }
+    ]
