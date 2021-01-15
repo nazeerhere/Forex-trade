@@ -46,12 +46,15 @@ a {
 }
 
 .Info-card {
-  background-color: blueviolet;
+  background-color: rgba(137, 43, 226, 0.678);
   width: 60%;
   height: 75%;
   border-radius: 6%;
   text-align: center;
   max-height: 65vh;
+  position: relative;
+  top: 30%;
+  left: 10%;
 }
 
 .currency-info {
@@ -63,12 +66,12 @@ a {
 }
 
 .card-header {
-  background-color: cadetblue;
+  /* background-color: cadetblue; */
   height: 30%;
 }
 
 .card-main {
-  background-color: chocolate;
+  /* background-color: chocolate; */
   height: 50%;
   display: flex;
   justify-content: center;
@@ -76,7 +79,7 @@ a {
 }
 
 .card-footer {
-  background-color: brown;
+  /* background-color: brown; */
   display: flex;
   justify-content: center;
   align-items: flex-end;
