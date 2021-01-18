@@ -20,3 +20,111 @@ CurrencyPairs--
             </div> */}
 
 {console.log(routerProps.match.params.id); 
+
+Rechart text--
+
+import React, { PureComponent } from 'react';
+import {
+  ComposedChart, Line, Area, Bar, XAxis, YAxis, CartesianGrid, Tooltip,
+  Legend, Scatter,
+} from 'recharts';
+import CandleSticks from "./Data/CandleStick.json"
+
+const data = [
+  {
+    time: '07:00:00', movingAverage: 1, close: 1.22665, volatility: .5945, open: 1.22805,
+  },
+  {
+    time: '08:00:00', movingAverage: 1, close: 1.2259, volatility: .7139, open: 1.22665,
+  },
+  {
+    time: '09:00:00', movingAverage: 1, close: 1.22685, volatility: .6319, open: 1.2259,
+  },
+  {
+    time: '10:00:00', movingAverage: 1, close: 1.228, volatility: .6223, open: 1.22685,
+  },
+  {
+    time: '11:00:00', movingAverage: 1, close: 1.2273, volatility: .6423, open: 1.22805,
+  },
+  {
+    time: '12:00:00', movingAverage: 1, close: 1.229, volatility: .6275, open: 1.2273,
+  },
+];
+
+
+
+export default class Example extends PureComponent {
+  static jsfiddleUrl = 'https://jsfiddle.net/alidingling/9xopwa9v/';
+
+  render() {
+    return (
+      <ComposedChart
+        width={500}
+        height={270}
+        data={data}
+        margin={{
+          top: 20, right: 20, bottom: 20, left: 20,
+        }}
+
+      >
+        <CartesianGrid stroke="#f5f5f5" />
+        <XAxis dataKey="time" />
+        <YAxis />
+        <Tooltip />
+        <Legend />
+        <Area type="monotone" dataKey="volatility" fill="rgb(61, 160, 15)" stroke="#8884d8" />
+        {/* <Bar dataKey="pv" barSize={20} fill="rgba(255, 0, 0, 0.438)" /> */}
+        <Bar dataKey="close" barSize={20} fill="#413ea0" style={{backgroundColor: "black"}}  />
+        <Scatter dataKey="open" fill="red" />
+        <Line type="monotone" dataKey="movingAverage" stroke="white" />
+      </ComposedChart>
+    );
+  }
+}
+
+
+- - -copied from Plaything- - -
+
+  // console.log(CandleStick[0])
+  const stick2 = Object.keys(CandleStick[0])[5]
+  // console.log(CandleStick[0][stick1])
+
+  const time2 = CandleStick[0][stick2].tm.split(" ")[1]
+  const date2 = CandleStick[0][stick2].tm.split(" ")[0]
+  const open2 = CandleStick[0][stick2].o
+  const high2 = CandleStick[0][stick2].h
+  const close2 = CandleStick[0][stick2].c
+  const low2 = CandleStick[0][stick2].l
+
+  const myArr = [
+        ["time", "low", "open", "close", "high"],
+        [time2, low2, open2, close2, high2] ]
+
+  console.log(stick2)
+
+  let time;
+  let open;
+  let high;
+  let close;
+  let low;
+
+const candleArray = () => CandleStick.map(candy => {
+  console.log(candy)
+  const stick1 = Object.keys(CandleStick[0])[4]
+
+  return(
+    time = CandleStick[0][stick1].tm.split(" ")[1],
+    open = CandleStick[0][stick1].o,
+    high = CandleStick[0][stick1].h,
+    close = CandleStick[0][stick1].c,
+    low = CandleStick[0][stick1].l
+
+    )
+})
+
+const drawCandleSticks = () => {
+  console.log(Object.keys(CandleStick[0]))
+  return [time2, low2, open2, close2, high2]
+}
+drawCandleSticks()
+

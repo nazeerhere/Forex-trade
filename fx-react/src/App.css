@@ -47,7 +47,7 @@ a {
 
 .Info-card {
   background-color: rgba(137, 43, 226, 0.678);
-  width: 60%;
+  width: 65%;
   height: 75%;
   border-radius: 6%;
   text-align: center;
@@ -67,12 +67,15 @@ a {
 
 .card-header {
   /* background-color: cadetblue; */
-  height: 30%;
+  height: 15%;
+  font-size: 150%;
 }
 
 .card-main {
-  /* background-color: chocolate; */
-  height: 50%;
+  background-color: chocolate;
+  color: white;
+  height: 70%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -83,5 +86,5 @@ a {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  height: 20%;
+  height: 15%;
 }

@@ -4,6 +4,8 @@ import CurrencyPairs from "./Components/CurrencyPairs.jsx"
 import PairInfo from "./Components/PairInfo.jsx"
 import { Route } from "react-router-dom"
 
+
+
 export default function App() {
   return (
     <div className="App">
