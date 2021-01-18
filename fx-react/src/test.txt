@@ -1,0 +1,22 @@
+ functions copied from PairInfo.jsx--
+    // const getStudent = async function(match) {
+    //     return(
+    //         classmates.filter(obj => obj.id == match.match)[0]
+    // )}
+
+    // const getName = async function(match) {
+    //     return(
+    //         data.filter(obj => obj.id == match.match)[0]
+    //     )
+    // }
+
+App.js--
+     {/* <Route path="/Currency-Pair:symbol" component={PairInfo}  /> */}
+
+
+CurrencyPairs--
+{/* <div className="currency-info" >
+                <PairInfo  props={match} />
+            </div> */}
+
+{console.log(routerProps.match.params.id); 

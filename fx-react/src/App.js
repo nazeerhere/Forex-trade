@@ -1,6 +1,7 @@
 import './App.css';
 import Header from "./Components/Header.jsx"
 import CurrencyPairs from "./Components/CurrencyPairs.jsx"
+import PairInfo from "./Components/PairInfo.jsx"
 import { Route } from "react-router-dom"
 
 export default function App() {
@@ -11,8 +12,7 @@ export default function App() {
 
         <Header/>
 
-        <Route exact path="/Currency-Pair" component={CurrencyPairs}/>
-        {/* <Route path="/Currency-Pair:symbol" component={CurrencyPairs} /> */}
+        <Route path="/Currency-Pair" component={CurrencyPairs}/>
 
       </div>
 
