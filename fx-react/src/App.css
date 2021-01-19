@@ -15,7 +15,7 @@ body {
   justify-content: space-evenly;
   font-size: 30px;
   position: relative;
-  top: -35%;
+  top: -75%;
 }
 
 a {
@@ -67,14 +67,14 @@ a {
 
 .card-header {
   /* background-color: cadetblue; */
-  height: 15%;
+  height: 10%;
   font-size: 150%;
 }
 
 .card-main {
   background-color: chocolate;
   color: white;
-  height: 70%;
+  height: 75%;
   width: 100%;
   display: flex;
   justify-content: center;
