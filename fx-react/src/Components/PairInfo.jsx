@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { UserContext } from "../UserContext.js"
 import Plaything from "../plaything"
+import Test from "./Test"
 
 
 
@@ -13,15 +14,6 @@ export default function PairInfo(props) {
     let infoName = getName(data)
 
 
-    // useEffect(() => {
-        // fetch(`https://fcsapi.com/api-v3/forex/list?type=forex&access_key=csQbcA47LkQXN25mV25h1cz`)
-        // .then(res => res.json())
-        // .then(data => console.log(data))
-    //     })
-
-    //     .catch(console.error);
-    // }, [props.match])
-
     return (
         <div className="Info-card" >
             <header className="card-header" >
@@ -30,6 +22,7 @@ export default function PairInfo(props) {
             
             <main className="card-main" >
                 <Plaything infoName={infoName} />
+                {/* <Test /> */}
             </main>
             
             <footer className="card-footer" >
@@ -38,3 +31,13 @@ export default function PairInfo(props) {
         </div>
     );
 }
+
+
+    // useEffect(() => {
+        // fetch(`https://fcsapi.com/api-v3/forex/list?type=forex&access_key=csQbcA47LkQXN25mV25h1cz`)
+        // .then(res => res.json())
+        // .then(data => console.log(data))
+    //     })
+
+    //     .catch(console.error);
+    // }, [props.match])

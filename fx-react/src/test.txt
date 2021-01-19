@@ -128,3 +128,4 @@ const drawCandleSticks = () => {
 }
 drawCandleSticks()
 
+arr.map()

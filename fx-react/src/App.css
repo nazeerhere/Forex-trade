@@ -15,7 +15,7 @@ body {
   justify-content: space-evenly;
   font-size: 30px;
   position: relative;
-  top: -75%;
+  top: -35%;
 }
 
 a {
@@ -34,7 +34,7 @@ a {
 }
 
 .pair {
-  background-color: black;
+  /* background-color: black; */
   height: 120vh;
   display: flex;
 }

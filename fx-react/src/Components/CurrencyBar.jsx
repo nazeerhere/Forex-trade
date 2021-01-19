@@ -8,7 +8,6 @@ export default function CurrencyBar() {
     const [controlData, setData] = useState(data)
 
     const handleChange = event => {
-        console.log(event.target.value)
         const userInput = event.target.value.toLowerCase()
         const filteredCurrency = data.filter(pair => {
             return pair.symbol.toLowerCase().includes(userInput)
