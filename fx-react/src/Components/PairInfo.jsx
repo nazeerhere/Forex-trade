@@ -1,8 +1,6 @@
 import React, { useContext } from 'react';
 import { UserContext } from "../UserContext.js"
 import Plaything from "../plaything"
-import Test from "./Test"
-
 
 
 export default function PairInfo(props) {
@@ -21,12 +19,10 @@ export default function PairInfo(props) {
             </header>
             
             <main className="card-main" >
-                <Plaything infoName={infoName} />
-                {/* <Test /> */}
+                <Plaything infoName={infoName} props={props} />
             </main>
             
             <footer className="card-footer" >
-            footer text
             </footer>
         </div>
     );

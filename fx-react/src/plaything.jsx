@@ -1,32 +1,45 @@
 import React, {useEffect, useState} from "react";
 import { Chart } from "react-google-charts";
-import CandleStick from "./Data/CandleStick.json"
 
 
-
-const Plaything = ({ infoName, candles }) => {
-  const [candleData, setData] = useState(null)
+const Plaything = ({ infoName, props }) => {
+  const [candleData, setData] = useState([])
+  const [min, setMin] = useState([])
+  const [max, setMax] = useState([])
 
   useEffect( () => {
-    fetch(`https://fcsapi.com/api-v3/forex/history?id=1&period1h&access_key=csQbcA47LkQXN25mV25h1cz`)
+    fetch(`https://fcsapi.com/api-v3/forex/history?id=${props.id.id}&period1h&access_key=csQbcA47LkQXN25mV25h1cz`)
     .then(res => res.json())
   
-    .then( res => {
+    .then(res => {
 
-      console.log(res)
+      // console.log(res)
       const arr = Object.entries(res.response)
       const chartdata = arr.map(kv => [ kv[1]['tm'].split(" ")[1], parseFloat(kv[1]['l']) ,parseFloat(kv[1]['o']) , parseFloat(kv[1]['c']) , parseFloat(kv[1]['h']) ])
       setData(chartdata)
+      // for(let i=0; i<chartdata.length; i++) {
+      //   if(chartdata[i] < min) {
+      //     setMin(chartdata[i][1])
+      //   }
+      // }
+      // for(let i=0; i<chartdata.length; i++) {
+      //   if(chartdata[i] > max) {
+      //     setMax(chartdata[i][4])
+      //   }
+      // }
+      setMin(chartdata[0][1])
+      setMax(chartdata[0][4])
+      console.log(chartdata[0])
+      console.log(chartdata[0][1])
+      console.log(chartdata[0][4])
+      // let min = chartdata[0][1]
+      // let max = chartdata[0][4]
     })
 
-    .then(res => console.log(candleData))
+    // .then(res => console.log(candleData))
     
     .catch(console.err)
-  }, [candleData])
-
-  // const arr = Object.entries(CandleStick[0])
-  // const chartdata = arr.map(kv => [ kv[1]['tm'].split(" ")[1], parseFloat(kv[1]['l']) ,parseFloat(kv[1]['o']) , parseFloat(kv[1]['c']) , parseFloat(kv[1]['h']) ])
-
+  }, [props.id.id])
 
   return (
     <Chart
@@ -42,23 +55,24 @@ const Plaything = ({ infoName, candles }) => {
         // Chart options
         {
           title: infoName,
-          fontSize: 12,
+          fontSize: 15,
           titleTextStyle: {
-            color: "yellow",
+            color: "silver",
           },
           hAxis: {
             title: "Time",
             titleTextStyle: {
               fontSize: 25,
-              color: "green",
+              color: "darkgrey",
             },
-            viewWindow: { min: 0, max: 50 },
+            viewWindow: { min: 0, max: 20 },
           },
           vAxis: {
             title: "Price",
-            viewWindow: { min: 1.2025, max: 1.231 },
+            viewWindow: { min: min, max: max },
             titleTextStyle: {
-              fontSize: 25
+              fontSize: 25,
+              color: "darkgrey"
             }
           },
           legend: "none",
@@ -68,6 +82,7 @@ const Plaything = ({ infoName, candles }) => {
       legendToggle
       rootProps={{ "data-testid": "1" }}
     />
+    
   );
 };
 export default Plaything;
