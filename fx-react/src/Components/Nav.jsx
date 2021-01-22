@@ -5,7 +5,7 @@ export default function Nav() {
     return (
         <div className="nav" >
             <Link to="/" >
-                <h2>Nav Bar</h2>
+                <h2>Forex Trading</h2>
             </Link>
             
             <div className="links" >

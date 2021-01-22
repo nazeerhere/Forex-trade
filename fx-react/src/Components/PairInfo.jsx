@@ -1,12 +1,32 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useContext } from 'react';
 import { UserContext } from "../UserContext.js"
+import Plaything from "../plaything"
 
 
 export default function PairInfo(props) {
     const data = useContext(UserContext)
 
-    const getStudent = (list) => list.filter(obj => obj.id == props.id.id)[0].name
-    let infoName = getStudent(data)
+    const getSymbol = (list) => list.filter(obj => obj.id == props.id.id)[0].symbol
+    const getName = (list) => list.filter(obj => obj.id == props.id.id)[0].name
+    let infoSymbol = getSymbol(data)
+    let infoName = getName(data)
+
+
+    return (
+        <div className="Info-card" >
+            <header className="card-header" >
+                {infoSymbol}
+            </header>
+            
+            <main className="card-main" >
+                <Plaything infoName={infoName} props={props} />
+            </main>
+            
+            <footer className="card-footer" >
+            </footer>
+        </div>
+    );
+}
 
 
     // useEffect(() => {
@@ -17,20 +37,3 @@ export default function PairInfo(props) {
 
     //     .catch(console.error);
     // }, [props.match])
-
-    return (
-        <div className="Info-card" >
-            <header className="card-header" >
-                {infoName}
-            </header>
-            
-            <main className="card-main" >
-                main text
-            </main>
-            
-            <footer className="card-footer" >
-            footer text
-            </footer>
-        </div>
-    );
-}
