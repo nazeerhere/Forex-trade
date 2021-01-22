@@ -17,27 +17,14 @@ const Plaything = ({ infoName, props }) => {
       const arr = Object.entries(res.response)
       const chartdata = arr.map(kv => [ kv[1]['tm'].split(" ")[1], parseFloat(kv[1]['l']) ,parseFloat(kv[1]['o']) , parseFloat(kv[1]['c']) , parseFloat(kv[1]['h']) ])
       setData(chartdata)
-      // for(let i=0; i<chartdata.length; i++) {
-      //   if(chartdata[i] < min) {
-      //     setMin(chartdata[i][1])
-      //   }
-      // }
-      // for(let i=0; i<chartdata.length; i++) {
-      //   if(chartdata[i] > max) {
-      //     setMax(chartdata[i][4])
-      //   }
-      // }
-      setMin(chartdata[0][1])
-      setMax(chartdata[0][4])
-      console.log(chartdata[0])
-      console.log(chartdata[0][1])
-      console.log(chartdata[0][4])
-      // let min = chartdata[0][1]
-      // let max = chartdata[0][4]
+      var maxRow = chartdata.map(function(row){ return Math.max.apply(Math, row); });
+      var max = Math.max.apply(null, maxRow);
+      var minRow = chartdata.map(function(row){ return Math.min.apply(Math, row); });
+      var min = Math.max.apply(null, minRow);
+      setMin(min)
+      setMax(max)
     })
 
-    // .then(res => console.log(candleData))
-    
     .catch(console.err)
   }, [props.id.id])
 
@@ -65,7 +52,7 @@ const Plaything = ({ infoName, props }) => {
               fontSize: 25,
               color: "darkgrey",
             },
-            viewWindow: { min: 0, max: 20 },
+            viewWindow: { min: 0, max: 30 },
           },
           vAxis: {
             title: "Price",
